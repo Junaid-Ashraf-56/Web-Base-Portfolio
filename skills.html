@@ -4,43 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet"> <!-- Local Bootstrap CSS -->
-    <link href="styles.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet"> <!-- Custom CSS -->
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar">
         <div class="container">
             <a class="navbar-brand" href="index.html">My Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="skills.html">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="skills.html" class="nav-link active">Skills</a></li>
+                    <li><a href="about.html" class="nav-link">About Me</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Skills Section -->
-    <section class="skills-section py-5">
+    <section class="skills-section">
         <div class="container">
-            <h2 class="text-center mb-5">My Skills</h2>
-            <div class="row">
-                <div class="col-md-4 text-center">
+            <h2 class="skills-heading">My Skills</h2>
+            <div class="skills-row">
+                <div class="skill-item">
                     <h3>Flutter</h3>
                     <p>Experience in building cross-platform mobile applications.</p>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="skill-item">
                     <h3>Dart</h3>
                     <p>Proficient in Dart programming language for Flutter development.</p>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="skill-item">
                     <h3>Java & C++</h3>
                     <p>Good knowledge of object-oriented programming concepts.</p>
                 </div>
@@ -48,6 +44,5 @@
         </div>
     </section>
 
-    <script src="js/bootstrap.bundle.min.js"></script> <!-- Local Bootstrap JS -->
 </body>
 </html>

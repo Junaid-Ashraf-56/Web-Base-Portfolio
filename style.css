@@ -2,27 +2,54 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #e5ecf3;
+    margin: 0;
     padding-top: 100px; /* Space for fixed navbar */
 }
 
 /* Navbar */
 .navbar {
-    background-color: #0e71d4 !important; /* Dark blue */
+    background-color: #328ce6; /* Dark blue */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    z-index: 1000;
 }
 
 .navbar-brand {
     font-size: 24px;
     font-weight: bold;
+    color: white;
+    margin-left: 20px;
 }
 
-.nav-link {
+.navbar-links {
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    margin: 0 15px;
+}
+
+.navbar-links .nav-link {
+    color: white;
+    text-decoration: none;
     font-size: 18px;
-    margin: 0 10px;
     transition: color 0.3s ease-in-out;
 }
 
-.nav-link:hover {
-    color: #00BFFF !important; /* Light blue hover effect */
+.navbar-links .nav-link:hover,
+.navbar-links .nav-link.active {
+    color: #00BFFF; /* Light blue hover effect */
 }
 
 /* Hero Section */
@@ -61,6 +88,8 @@ body {
     padding: 10px 30px;
     font-size: 18px;
     transition: background-color 0.3s ease-in-out;
+    color: white;
+    text-decoration: none;
 }
 
 .btn-primary:hover {
@@ -71,17 +100,39 @@ body {
 .skills-section {
     padding: 80px 0;
     background-color: #ffffff;
+    text-align: center;
 }
 
 .skills-section h3 {
-    font-size: 24px;
+    font-size: 2.5rem;
     font-weight: bold;
-    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
-.skills-section p {
-    font-size: 16px;
-    color: #555;
+.skills-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-item {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 20px;
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.skill-item h4 {
+    font-size: 1.8rem;
+    color: #343a40;
+}
+
+.skill-item p {
+    font-size: 1.1rem;
+    color: #6c757d;
 }
 
 /* Contact Section */
@@ -92,6 +143,7 @@ body {
 }
 
 .contact-section h2 {
+    font-size: 2.5rem;
     margin-bottom: 30px;
 }
 
@@ -113,20 +165,4 @@ body {
 
 .contact-section ul li a:hover {
     text-decoration: underline;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hero-section {
-        padding: 60px 20px;
-    }
-    .profile-img {
-        max-width: 120px;
-    }
-    .display-4 {
-        font-size: 2rem;
-    }
-    .lead {
-        font-size: 1rem;
-    }
 }

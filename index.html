@@ -4,24 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet"> <!-- Local Bootstrap CSS -->
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar">
         <div class="container">
             <a class="navbar-brand" href="index.html">My Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="skills.html" class="nav-link">Skills</a></li>
+                    <li><a href="about.html" class="nav-link">About Me</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -30,19 +26,18 @@
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center">
-                    <img src="MY photo.jpeg" alt="Your Name" class="img-fluid rounded-circle profile-img">
+            <div class="hero-content">
+                <div class="profile-img-container">
+                    <img src="MY photo.jpeg" alt="Your Name" class="profile-img">
                 </div>
-                <div class="col-md-6">
+                <div class="text-content">
                     <h1 class="display-4">Hello, I'm Junaid Ashraf</h1>
                     <p class="lead">I'm a passionate Flutter Developer with experience in mobile app development. I love creating innovative solutions and working on challenging projects.</p>
-                    <a href="contact.html" class="btn btn-primary btn-lg">Get in Touch</a>
+                    <a href="contact.html" class="btn">Get in Touch</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <script src="js/bootstrap.bundle.min.js"></script> <!-- Local Bootstrap JS -->
 </body>
 </html>
