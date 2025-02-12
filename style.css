@@ -1,7 +1,7 @@
 /* General Styling */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
+    background-color: #e5ecf3;
     padding-top: 100px; /* Space for fixed navbar */
 }
 
@@ -18,7 +18,7 @@ body {
 .nav-link {
     font-size: 18px;
     margin: 0 10px;
-    transition: color 1s ease;
+    transition: color 0.3s ease-in-out;
 }
 
 .nav-link:hover {
@@ -30,12 +30,18 @@ body {
     padding: 100px 0;
     background: linear-gradient(135deg, #87CEFA, #00BFFF);
     color: white;
+    text-align: center;
 }
 
 .profile-img {
     max-width: 150px;
     border: 5px solid white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
 }
 
 .display-4 {
@@ -48,15 +54,79 @@ body {
     margin-bottom: 40px;
 }
 
+/* Button Styling */
 .btn-primary {
     background-color: #343a40;
     border: none;
     padding: 10px 30px;
     font-size: 18px;
-    transition: background-color 1s ease;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .btn-primary:hover {
     background-color: #00BFFF;
 }
 
+/* Skills Section */
+.skills-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.skills-section h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.skills-section p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 80px 0;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.contact-section h2 {
+    margin-bottom: 30px;
+}
+
+.contact-section ul {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+}
+
+.contact-section ul li {
+    margin: 10px 0;
+}
+
+.contact-section ul li a {
+    color: #0e71d4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-section ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 20px;
+    }
+    .profile-img {
+        max-width: 120px;
+    }
+    .display-4 {
+        font-size: 2rem;
+    }
+    .lead {
+        font-size: 1rem;
+    }
+}
