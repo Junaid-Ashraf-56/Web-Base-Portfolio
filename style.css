@@ -54,8 +54,6 @@ body {
 
 
 
-
-/* Hero Section */
 /* Hero Section */
 .hero-section {
     display: flex;
@@ -80,8 +78,8 @@ body {
     flex: 1;
     display: flex;
     margin-top: -40px;
-    justify-content: flex-start; /* Align image to left */
-    margin-right: 50px; /* Add space on the right side */
+    justify-content: flex-start; 
+    margin-right: 100px; 
 }
 
 /* Image */
@@ -104,22 +102,29 @@ body {
 }
 
 /* Text Content */
-.text-content {
+.text-container {
+    padding: 20px 30px; 
+    border-radius: 8px; 
+    max-width: 600px; 
+    min-height: 350px;
+    text-align: left; 
+    margin-top: -30px; 
     flex: 2;
-    text-align: left; /* Align text properly */
-    padding-left: 50px; /* Add space to the left side of the text */
+    font-size: 20px;
+    
 }
 
 .btn {
     display: inline-block;
     padding: 10px 20px;
     background-color: white;
-    color: #0073e6;
+    color:#537253;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
     margin-top: 10px;
     transition: 0.5s ease-in-out;
+    
 }
 
 .btn:hover {
