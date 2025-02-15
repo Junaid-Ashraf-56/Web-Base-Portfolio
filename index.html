@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title><a class="navbar-brand" href="index.html">My Portfolio</a></title>
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
@@ -16,7 +16,7 @@
                 <ul>
                     <li><a href="#home" class="nav-link active">Home</a></li>
                     <li><a href="#skills" class="nav-link">Skills</a></li>
-                    <li><a href="#about" class="nav-link">About Me</a></li>
+                    <li><a href="#about" class="nav-link">Projects</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </div>
@@ -32,7 +32,8 @@
                 </div>
                 <div class="text-content">
                     <h1 class="display-4">Hello, I'm Junaid Ashraf</h1>
-                    <p class="lead">I'm a passionate Flutter Developer with experience in mobile app development. I love creating innovative solutions and working on challenging projects.</p>
+                    <p class="lead">I'm a passionate Flutter Developer with experience in mobile app development. 
+                    I love creating innovative solutions and working on challenging projects.</p>
                     <a href="#contact" class="btn">Get in Touch</a>
                 </div>
             </div>
@@ -60,14 +61,32 @@
         </div>
     </section>
 
-    <!-- About Me Section -->
-    <section id="about" class="about-section">
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
         <div class="container">
-            <h2 class="section-heading">About Me</h2>
-            <p>I am Junaid Ashraf, a passionate Flutter developer with 1 year of experience in mobile app development. I specialize in Dart, Flutter, and backend integration.</p>
-            <p>In my free time, I love exploring new technologies, solving coding challenges, and reading tech blogs.</p>
+            <h2 class="section-heading">My Projects</h2>
+            <div class="projects-row">
+                <div class="project-item">
+                    <h3>Project 1: Task Manager App</h3>
+                    <p>A Flutter-based task management app that allows users to add, edit, and delete tasks with notifications.</p>
+                    <a href="https://github.com/yourgithub/task-manager" class="btn" target="_blank">View on GitHub</a>
+                </div>
+                
+                <div class="project-item">
+                    <h3>Project 2: Weather App</h3>
+                    <p>A weather app built with Flutter that fetches real-time weather data using an API and displays forecasts.</p>
+                    <a href="https://github.com/yourgithub/weather-app" class="btn" target="_blank">View on GitHub</a>
+                </div>
+                
+                <div class="project-item">
+                    <h3>Project 3: Chat Application</h3>
+                    <p>A real-time chat application using Flutter and Firebase, supporting text and image messaging.</p>
+                    <a href="https://github.com/yourgithub/chat-app" class="btn" target="_blank">View on GitHub</a>
+                </div>
+            </div>
         </div>
     </section>
+    
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
@@ -88,6 +107,11 @@
             <p>&copy; 2025 Junaid Ashraf. All rights reserved.</p>
         </div>
     </footer>
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelector(".profile-img").classList.add("profile-img-loaded");
+        });
+    </script>
+    
 </body>
 </html>
