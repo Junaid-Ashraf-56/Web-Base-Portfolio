@@ -22,28 +22,55 @@
             </div>
         </div>
     </nav>
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2 class="section-heading">Contact Me</h2>
-            <p>You can reach me at:</p>
-            <ul>
-                <li>Email: your.email@example.com</li>
-                <li>Phone: +123 456 7890</li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">Your LinkedIn Profile</a></li>
-            </ul>
+   <!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2 class="section-heading">Contact us</h2>
+        <div class="contact-content">
+            <!-- Left Side - Contact Details -->
+            <div class="contact-info">
+                <ul>
+                    <li><strong>Email:</strong> junaidashraf.code@gmail.com</li>
+                    <li><strong>Phone:</strong> 03006690923</li>
+                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/junaid-ashraf56/" target="_blank"> Junaid Ashraf </a></li>
+                    <li><strong>GitHub:</strong> <a href="https://github.com/Junaid-Ashraf-56" target="_blank"> Junaid-Ashraf-56 </a></li>
+                    <li><strong>Instagram:</strong> <a href="https://www.instagram.com/junaid_ashraf_56/" target="_blank"> junaid_ashraf_56 </a></li>
+                </ul>
+            </div>
+
+            <!-- Right Side - Contact Form -->
+            <div class="contact-form">
+                <h3>For Any Query</h3>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+            
         </div>
-    </section>
-      <!-- Footer -->
-      <footer>
-        <div class="container">
-            <p>&copy; 2025 Junaid Ashraf. All rights reserved.</p>
-        </div>
-    </footer>
+    </div>
+</section>
+
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            document.querySelector(".profile-img").classList.add("profile-img-loaded");
+    document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("contact-form").addEventListener("submit", function (event) {
+            setTimeout(function () {
+                location.reload(); // Reloads the page after 1 second
+            }, 1000);
         });
+    });
+
     </script>
     
 </body>
