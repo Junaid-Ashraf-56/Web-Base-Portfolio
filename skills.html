@@ -73,10 +73,16 @@
         </div>
     </section>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            document.querySelector(".profile-img").classList.add("profile-img-loaded");
-        });
-    </script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const skillsSection = document.querySelector(".skills-section");
+        
+        if (skillsSection) {
+            setTimeout(() => {
+                skillsSection.classList.add("loaded");
+            }, 200); // Delay to make it smooth
+        }
+    });
+</script>
     
 </body>
 </html>

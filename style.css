@@ -164,17 +164,23 @@ body {
     border-radius: 8px;
     width: 250px;
     text-align: center;
-    transition: 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
     align-items: center;
+    opacity: 0; 
+    transform: translateX(-100px); 
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+.skills-section.loaded .skill-item {
+    opacity: 1;
+    transform: translateX(0); 
 }
 
 .skill-item:hover {
     background: #8ab98a;
 }
 .skill-icon {
-    width: 100px; /* Adjust size */
+    width: 100px; 
     height: 100px;
     margin-bottom: 10px;
 }
