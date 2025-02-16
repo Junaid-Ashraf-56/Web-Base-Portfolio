@@ -133,9 +133,10 @@ body {
 
 /* Section Styling */
 .section-heading {
+    color:white;
     text-align: center;
-    font-size: 28px;
-    margin-bottom: 20px;
+    font-size: 32px;
+    margin-bottom: 30px;
 }
 
 
@@ -150,8 +151,9 @@ body {
 .skills-row {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 100px;
     flex-wrap: wrap;
+    margin-bottom: 40px;
 }
 
 .skill-item {
@@ -162,10 +164,23 @@ body {
     width: 250px;
     text-align: center;
     transition: 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .skill-item:hover {
     background: #8ab98a;
+}
+.skill-icon {
+    width: 100px; /* Adjust size */
+    height: 100px;
+    margin-bottom: 10px;
+}
+.skill-icon-2 {
+    width: 120px; /* Adjust size */
+    height: 100px;
+    margin-bottom: 10px;
 }
 
 /* Projects Section */
