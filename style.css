@@ -183,6 +183,11 @@ body {
     height: 100px;
     margin-bottom: 10px;
 }
+.skill-icon-3 {
+    width: 150px; /* Adjust size */
+    height: 150px;
+    margin-bottom: 10px;
+}
 /*About me*/
 .about-section {
     background: #D3D3D3;
