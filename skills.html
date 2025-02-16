@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">My Portfolio</a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="index.html" class="nav-link ">Home</a></li>
+                    <li><a href="skills.html" class="nav-link">Skills</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="project.html" class="nav-link">Projects</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-heading">My Skills</h2>
+            <div class="skills-row">
+                <div class="skill-item">
+                    <img src="images/Dart.png" alt="Dart" class="skill-icon">
+                    <h3>Dart</h3>
+                    <p>Proficient in Dart programming language for Flutter development.</p>
+                </div>
+                <div class="skill-item">
+                    <img src="images/C++.png" alt="C++" class="skill-icon">
+                    <h3> C++</h3>
+                    <p>Good knowledge of C++ with Object-Oriented Programming (OOP)</p>
+                </div>
+                <div class="skill-item">
+                    <img src="images/Java.png" alt="Java" class="skill-icon">
+                    <h3> Java</h3>
+                    <p>Strong understanding of Java, OOP principles, and currently learning  Data Structures & Algorithms (DSA).</p>
+                </div>
+                <div class="skill-item">
+                    <img src="images/Python.png" alt="Python" class="skill-icon">
+                    <h3> Python</h3>
+                    <p>Familiar with Python programming, OOP, and basic scripting for automation and data handling.</p>
+                </div>
+            </div>
+
+            <div class="skills-row">
+                <div class="skill-item">
+                    <img src="images/Linux.png" alt="Linux" class="skill-icon-2">
+                    <h3>Linux</h3>
+                    <p>Comfortable with Linux commands, shell scripting, and system navigation for development environments.</p>
+                </div>
+                <div class="skill-item">
+                    <img src="images/Git.png" alt="Git" class="skill-icon-2">
+                    <h3>Git</h3>
+                    <p>Proficient in Git for version control, managing repositories, and collaborating on development projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelector(".profile-img").classList.add("profile-img-loaded");
+        });
+    </script>
+    
+</body>
+</html>
