@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Contact Me</title>
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -22,56 +23,59 @@
             </div>
         </div>
     </nav>
-   <!-- Contact Section -->
-<section id="contact" class="contact-section">
-    <div class="container">
-        <h2 class="section-heading">Contact us</h2>
-        <div class="contact-content">
-            <!-- Left Side - Contact Details -->
-            <div class="contact-info">
-                <ul>
-                    <li><strong>Email:</strong> junaidashraf.code@gmail.com</li>
-                    <li><strong>Phone:</strong> 03006690923</li>
-                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/junaid-ashraf56/" target="_blank"> Junaid Ashraf </a></li>
-                    <li><strong>GitHub:</strong> <a href="https://github.com/Junaid-Ashraf-56" target="_blank"> Junaid-Ashraf-56 </a></li>
-                    <li><strong>Instagram:</strong> <a href="https://www.instagram.com/junaid_ashraf_56/" target="_blank"> junaid_ashraf_56 </a></li>
-                </ul>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-heading">Contact <span class="highlight">Me</span></h2>
+            <div class="contact-content">
+                <!-- Left Side - Contact Details -->
+                <div class="contact-info">
+                    <ul>
+                        <li><i class="fas fa-envelope"></i>  <a href="mailto:junaidashraf.code@gmail.com" target="_blank">junaidashraf.code@gmail.com</a></li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:03006690923" target="_blank">03006690923</a></li>
+                        <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/junaid-ashraf56/" target="_blank">Junaid Ashraf</a></li>
+                        <li><i class="fab fa-github"></i> <a href="https://github.com/Junaid-Ashraf-56" target="_blank">Junaid-Ashraf-56</a></li>
+                        <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/junaid_ashraf_56/" target="_blank">junaid_ashraf_56</a></li>
+                    </ul>
+                </div>
+
+                <!-- Right Side - Contact Form -->
+                <div class="contact-form">
+                    <h3>For Any Query</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
             </div>
-
-            <!-- Right Side - Contact Form -->
-            <div class="contact-form">
-                <h3>For Any Query</h3>
-            <form id="contact-form">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="btn">Submit</button>
-            </form>
-            
         </div>
-    </div>
-</section>
-
+    </section>
 
     <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        document.getElementById("contact-form").addEventListener("submit", function (event) {
-            setTimeout(function () {
-                location.reload(); // Reloads the page after 1 second
-            }, 1000);
-        });
-    });
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("contact-form").addEventListener("submit", function (event) {
+                event.preventDefault(); // Prevents the default form submission
 
+                setTimeout(function () {
+                    location.reload(); // Reloads the page after 1 second
+                }, 1000);
+            });
+        });
     </script>
-    
 </body>
 </html>

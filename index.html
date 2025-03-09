@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html">My Portfolio</a>
+            <a class="navbar-brand" href="index.html">Welcome to my Portfolio</a>
             <div class="navbar-links">
                 <ul>
                     <li><a href="index.html" class="nav-link ">Home</a></li>
@@ -28,21 +29,27 @@
         <div class="container">
             <div class="hero-content">
                 <div class="profile-img-container">
-                    <img src="images/MY photo.jpeg" alt="Junaid Ashraf" class="profile-img">
+                    <img src="images/MY photo.jpeg" alt="Profile Image" class="profile-img">
                 </div>
                 <div class="text-container">
-                    <h1>Welcome to My Portfolio</h1>
-                    <p>Hi, I'm Junaid Ashraf, </p>
+                    <h1><span class="greeting">Hi,</span> <span class="name-highlight">Junaid Ashraf</span></h1>
                     <p>My passion lies in <strong>learning new technologies</strong> and staying updated with the latest trends in the tech world. I enjoy exploring innovative solutions and continuously improving my skills.</p>
+            
+                    <div class="social-links">
+                        <a href="https://leetcode.com/u/56_56/" target="_blank" class="social-link"><i class="fas fa-code"></i></a>
+                        <a href="https://github.com/Junaid-Ashraf-56" target="_blank" class="social-link"><i class="fab fa-github"></i> </a>
+                        <a href="https://www.instagram.com/junaid_ashraf_56/" target="_blank" class="social-link"><i class="fab fa-instagram"></i> </a>
+                        <a href="https://www.linkedin.com/in/junaid-ashraf56/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i> </a>
+                    </div>
+                    <br>
                     <a href="#projects" class="btn">View My Work</a>
                 </div>
-                
             </div>
         </div>
     </section>
 
     <script>   
-            document.addEventListener("DOMContentLoaded", function () {
+        document.addEventListener("DOMContentLoaded", function () {
             document.querySelector(".profile-img").classList.add("profile-img-loaded");
         });
     </script>
