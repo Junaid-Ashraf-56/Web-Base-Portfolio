@@ -12,7 +12,10 @@
     <nav class="navbar">
         <div class="container">
             <a class="navbar-brand" href="index.html">Welcome to my Portfolio</a>
-            <div class="navbar-links">
+            <div class="navbar-toggle" id="navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="navbar-links" id="navbar-links">
                 <ul>
                     <li><a href="index.html" class="nav-link ">Home</a></li>
                     <li><a href="skills.html" class="nav-link">Skills</a></li>
@@ -51,6 +54,10 @@
     <script>   
         document.addEventListener("DOMContentLoaded", function () {
             document.querySelector(".profile-img").classList.add("profile-img-loaded");
+        });
+
+        document.getElementById('navbar-toggle').addEventListener('click', function() {
+            document.getElementById('navbar-links').classList.toggle('active');
         });
     </script>
     

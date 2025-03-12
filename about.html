@@ -11,7 +11,10 @@
     <nav class="navbar">
         <div class="container">
             <a class="navbar-brand" href="index.html">My Portfolio</a>
-            <div class="navbar-links">
+            <div class="navbar-toggle" id="navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="navbar-links" id="navbar-links">
                 <ul>
                     <li><a href="index.html" class="nav-link ">Home</a></li>
                     <li><a href="skills.html" class="nav-link">Skills</a></li>
@@ -24,7 +27,7 @@
     </nav>
     <section id="about" class="about-section">
         <div class="container">
-            <h2 class="section-heading">About <span class="highlight">Me</span></h2>lass="highlight">Me</span></h2>
+            <h2 class="section-heading">About <span class="highlight">Me</span></h2>
             <div class="about-content">
                 <div class="about-text">
                     <p>Hi, I'm <strong>Junaid Ashraf</strong>, I am a passionate and ambitious individual aspiring to become a <strong>Software Engineer</strong> shortly. 
@@ -44,5 +47,11 @@
             </div>
         </div>
     </section>
+
+    <script>
+        document.getElementById('navbar-toggle').addEventListener('click', function() {
+            document.getElementById('navbar-links').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
