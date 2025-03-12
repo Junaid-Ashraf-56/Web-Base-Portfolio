@@ -19,4 +19,3 @@ Welcome to my personal web portfolio! 🎨🚀 This project showcases my skills,
    git clone git@github.com:Junaid-Ashraf-56/Web-Base-Portfolio.git
 
 
-   cd Web-Base-Portfolio
