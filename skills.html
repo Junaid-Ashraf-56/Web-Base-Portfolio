@@ -99,6 +99,13 @@
                 }, 200); // Delay to make it smooth
             }
         });
+        document.addEventListener('click', function(event) {
+            var isClickInside = document.getElementById('navbar-toggle').contains(event.target) || document.getElementById('navbar-links').contains(event.target);
+
+            if (!isClickInside) {
+                document.getElementById('navbar-links').classList.remove('active');
+            }
+        });
     </script>
 </body>
 </html>

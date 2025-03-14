@@ -37,9 +37,7 @@
                     <ul>
                         <li><i class="fas fa-envelope"></i>  <a href="mailto:junaidashraf.code@gmail.com" target="_blank">junaidashraf.code@gmail.com</a></li>
                         <li><i class="fas fa-phone"></i> <a href="tel:03006690923" target="_blank">03006690923</a></li>
-                        <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/junaid-ashraf56/" target="_blank">Junaid Ashraf</a></li>
-                        <li><i class="fab fa-github"></i> <a href="https://github.com/Junaid-Ashraf-56" target="_blank">Junaid-Ashraf-56</a></li>
-                        <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/junaid_ashraf_56/" target="_blank">junaid_ashraf_56</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> Faisalabad, Pakistan</li>
                     </ul>
                 </div>
 
@@ -82,6 +80,13 @@
                     location.reload(); // Reloads the page after 1 second
                 }, 1000);
             });
+        });
+        document.addEventListener('click', function(event) {
+            var isClickInside = document.getElementById('navbar-toggle').contains(event.target) || document.getElementById('navbar-links').contains(event.target);
+
+            if (!isClickInside) {
+                document.getElementById('navbar-links').classList.remove('active');
+            }
         });
     </script>
 </body>

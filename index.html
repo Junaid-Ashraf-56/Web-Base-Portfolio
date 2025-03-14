@@ -45,7 +45,7 @@
                         <a href="https://www.linkedin.com/in/junaid-ashraf56/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i> </a>
                     </div>
                     <br>
-                    <a href="#projects" class="btn">View My Work</a>
+                    <a href="#projects" class="btn">Hire me</a>
                 </div>
             </div>
         </div>
@@ -58,6 +58,14 @@
 
         document.getElementById('navbar-toggle').addEventListener('click', function() {
             document.getElementById('navbar-links').classList.toggle('active');
+        });
+
+        document.addEventListener('click', function(event) {
+            var isClickInside = document.getElementById('navbar-toggle').contains(event.target) || document.getElementById('navbar-links').contains(event.target);
+
+            if (!isClickInside) {
+                document.getElementById('navbar-links').classList.remove('active');
+            }
         });
     </script>
     
